@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>DBMS_PROJECT_winform</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update=".Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="StoredPROC.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StoredPROC.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update=".xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="StoredPROC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StoredPROC.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Aircrafts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Airline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Boarded_Passengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Flights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Passengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Passport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Terminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update=".xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="StoredPROC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>
